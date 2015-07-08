@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \documentclass[letterpaper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+\clearscrheadfoot
+
+\addtolength{\voffset}{-0.65in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{+3in} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+\begin{document}
+
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{WordSpace = 12.0, LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Ruth  Grace Wong} % Your name at the top
+
+\vspace{1cm} % Extra whitespace after the large name at the top
+
+{\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont\scshape % Letter spacing and font size
+
+268 Byng Avenue {\large\textperiodcentered} North York {\large\textperiodcentered} Ontario {\large\textperiodcentered} Canada\\ % Your mailing address
+{\Large\Letter} ruthgracewong@gmail.com \ {\Large\Telefon} (647) 868-3107 % Your email address and phone number
+}
+\vspace{-0.3cm}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{onehalfspacing} \setstretch{0.8}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Masters of Science & Computational Biochemistry, University of Western Ontario\\
+& Researching gut microbiota and bariatric interventions\\
+& expected to graduate in December 2015 \\[2ex]
+Bachelor of Medical Science & Computational Biochemistry, University of Western Ontario\\
+& Dean's Honors List, Western Gold Medal, 2014\\[1ex]
+\end{tabular}
+\end{onehalfspacing}
+%3rd year Analysis of Algorithms\\
+%Soft Skills & Mentorship, critical thinking, oral/written communcation \\
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+	
+\vspace{-0.5cm}
+
+\section{Skills}
+\begin{onehalfspacing} \setstretch{0.8}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+Programming and Scripting & Java, R, Perl, Python, MatLab, Bash, Pascal, JavaScript, LaTeX\\ [2ex]
+Relevant Courses & Data Structures, Analysis of Algorithms,  Software Engineering\\
+& Software Tools and Systems Programming, Discrete Math\\
+\end{tabular}
+\end{onehalfspacing}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+	
+\vspace{-0.5cm}
+
+\section{Projects}
+\begin{onehalfspacing} \setstretch{0.8}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+\hyperref{https://github.com/ruthgrace/hypergeometricPathwayEnrichmentPrototype}{}{}{MedSavant pathway view} & Displays biological processes affected by genetic variants.\\
+& Project hosted by Google Summer of Code.\\[2ex]
+%Music BLAST & Measures homology in music based on the BLAST algorithm.\\[2ex]
+
+\hyperref{http://hackthenorth.challengepost.com/submissions/27052-guava}{}{}{Guava} & Genomic, User-Accessible Variant Annotation.\\
+& Scalable, secure, open source API. Hack the North winner.\\[2ex]
+
+\hyperref{http://hackwestern.com}{}{}{Hack Western} & Ran and raised funding for a 300 student, 36 hour hackathon.\\
+
+\end{tabular}
+\end{onehalfspacing}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.5cm}
+
+\section{Experience}
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
+\gray & \textbf{Software Engineer (Site Reliability) Intern -} \textit{Google NYC}\\
+\gray & {May 2015 - August 2015}\\
+\end{tabularx}
+\vspace{-0.1cm}
+\begin{itemize} \itemsep-0.2cm
+\item[$\cdot$] Implementing monitoring for segments in cloud storage.\\
+\end{itemize}
+
+\vspace{-0.05cm}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
+\gray & \textbf{RezNet Coordinator -} \textit{University of Western Ontario}\\
+\gray & {September 2011 - April 2014}\\
+\end{tabularx}
+\vspace{-0.1cm}
+\begin{itemize}\itemsep-0.2cm
+\item[$\cdot$] Provided internet support to students throughout the year. Involved in hiring and training.\\
+\end{itemize}
+
+\vspace{-0.05cm}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
+\gray & \textbf{Summer Lab Assistant -} \textit{Egan Lab, SickKids Hospital, University of Toronto}\\
+\gray & {October 2009 - August 2012}\\
+\end{tabularx}
+\vspace{-0.1cm}
+\begin{itemize} \itemsep-0.2cm
+\item[$\cdot$] Conducted experiments involving mouse autopsies, sequencing, and tumor classification.
+\item[$\cdot$] Co-authored paper published in Cancer Research.\\
+\end{itemize}
+
+\vspace{-0.05cm}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
+\gray & \textbf{Research Assistant -} \textit{Grahn Lab and Pirouz Lab, University of Western Ontario}\\
+\gray & {October 2011 - April 2013}\\
+\end{tabularx}
+\vspace{-0.1cm}
+\begin{itemize} \itemsep-0.2cm
+\item[$\cdot$] Wrote E-Basic script in E-Prime to research gambling, music, and prosocial behavior\\
+\item[$\cdot$] Generated stimuli in MatLab, wrote E-basic script for user-conditioned experiments\\
+\end{itemize}
+
+\vspace{-0.05cm}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
+\gray & \textbf{ACM International Collegiate Programming Contest -} \textit{University of Western Ontario}\\
+\gray & {September 2010 - November 2014}\	\
+\end{tabularx}
+\vspace{-0.1cm}
+\begin{itemize} \itemsep-0.2cm
+\item[$\cdot$] Competed from 2010 to 2013, coding in Java. Coached in 2014.\\
+
+\end{itemize}
+
+
+\end{center}
+
+\end{document}
