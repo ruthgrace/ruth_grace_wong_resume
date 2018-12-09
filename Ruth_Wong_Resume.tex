@@ -34,6 +34,11 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Adobe Garamond Pro} % Main document font
 
+\newfontfamily{\morespace}{Adobe Garamond Pro}[
+  WordSpace={2, 2, 2}
+]
+
+
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
 
 \pagestyle{scrheadings} % Print the headers and footers on all pages
@@ -56,12 +61,12 @@
 % ÊHEADER SECTION
 %----------------------------------------------------------------------------------------
 
-{\addfontfeature{WordSpace = 2.0, LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Ruth Grace Wong} % Your name at the top
+{\addfontfeature{LetterSpace=10.0}\fontsize{36}{36}\selectfont\scshape Ruth Grace Wong} % Your name at the top
 
 \vspace{1cm} % Extra whitespace after the large name at the top
 
 {\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
-\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont\scshape % Letter spacing and font size
+\addfontfeature{LetterSpace=10.0}\fontsize{12.5}{17}\selectfont\scshape % Letter spacing and font size
 
 268 Byng Avenue {\large\textperiodcentered} North York {\large\textperiodcentered} Ontario {\large\textperiodcentered} Canada\\ % Your mailing address
 {\Large\Letter} ruthgracewong@gmail.com \ {\Large\Telefon} (647) 868-3107 % Your email address and phone number
