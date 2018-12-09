@@ -33,6 +33,12 @@
 \usepackage[hidelinks]{hyperref}
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Adobe Garamond Pro} % Main document font
+\usepackage[margin=1.25in]{geometry}
+
+\newfontfamily{\morespace}{Adobe Garamond Pro}[
+  WordSpace={1, 1, 1}
+]
+
 
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
 
@@ -56,33 +62,17 @@
 % ÊHEADER SECTION
 %----------------------------------------------------------------------------------------
 
-{\addfontfeature{WordSpace = 2.0, LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Ruth Grace Wong} % Your name at the top
+{\addfontfeature{LetterSpace=10.0}\fontsize{36}{36}\selectfont\scshape Ruth Grace Wong} % Your name at the top
 
 \vspace{1cm} % Extra whitespace after the large name at the top
 
 {\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
-\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont\scshape % Letter spacing and font size
+\addfontfeature{LetterSpace=10.0}\fontsize{12.5}{17}\selectfont\scshape % Letter spacing and font size
 
 268 Byng Avenue {\large\textperiodcentered} North York {\large\textperiodcentered} Ontario {\large\textperiodcentered} Canada\\ % Your mailing address
 {\Large\Letter} ruthgracewong@gmail.com \ {\Large\Telefon} (647) 868-3107 % Your email address and phone number
 }
 \vspace{-0.3cm}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-\begin{onehalfspacing} \setstretch{0.8}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Masters of Science 2016 & Computational Biochemistry, University of Western Ontario\\[1ex]
-Bachelor of Medical Science 2014 & Computational Biochemistry, University of Western Ontario\\
-\end{tabular}
-\end{onehalfspacing}
-%3rd year Analysis of Algorithms\\
-%Soft Skills & Mentorship, critical thinking, oral/written communcation \\
-
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -92,42 +82,14 @@ Bachelor of Medical Science 2014 & Computational Biochemistry, University of Wes
 
 \section{Skills}
 \begin{onehalfspacing} \setstretch{0.8}
+\begin{flushleft}
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l }
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-
-Programming and Scripting & Java, R, Python, C++, JavaScript, MatLab, LaTeX, Bash, Perl\\ [2ex]
-Relevant Courses & Data Structures, Analysis of Algorithms,  Software Engineering\\
-& Software Tools and Systems Programming, Discrete Math\\
+Programming and Scripting & Python, Bash, Java, R\\ [2ex]
+Software / Tools & Amazon Web Services, Fusion360 CAD\\
 \end{tabular}
+\end{flushleft}
 \end{onehalfspacing}
-
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS
-%----------------------------------------------------------------------------------------
-	
-\vspace{-0.5cm}
-
-\section{Projects}
-\begin{onehalfspacing} \setstretch{0.8}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-
-Masters Thesis & Created custom DNA analysis pipeline to study role of gut\\
-& microbiome in fatty liver disease and atherosclerosis.\\
-& Developed techniques to measure difference between samples.\\[2ex]
-
-\hyperref{https://github.com/ruthgrace/hypergeometricPathwayEnrichmentPrototype}{}{}{MedSavant pathway view} & Displays biological processes affected by genetic variants.\\
-$($Google Summer of Code$)$ & Java program with JavaScript visualization\\
-& Used by physicians at Toronto SickKids hospital.\\[2ex]
-
-\hyperref{http://hackwestern.com}{}{}{Hack Western} & Ran a 500 student, 36 hour hackathon.\\
-& Directed a team of 16 students to do sponsorships and logistics.\\
-
-\end{tabular}
-\end{onehalfspacing}
-
-
 
 %----------------------------------------------------------------------------------------
 %	EMPLOYMENT
@@ -140,17 +102,32 @@ $($Google Summer of Code$)$ & Java program with JavaScript visualization\\
 \renewcommand{\arraystretch}{1.3}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{Software Engineer (Core Site Reliability) -} \textit{Pinterest}\\
+\gray & \textbf{Site Reliability Engineer -} \textit{Pinterest Core SRE team}\\
 \gray & {July 2016 to Present}\\
 \end{tabularx}
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
-\item[$\cdot$] Developing and automating systems to improve the reliability of Pinterest\\
-\item[$\cdot$] Part of on call rotation to resolve outages as they occur\\
+\item[$\cdot$] Wrote pipeline for automating machine image upgrades (OS, instance type) for services, using Python and Spinnaker.\\
+\item[$\cdot$] Automated server configuration testing, using Vagrant, Puppet, Jenkins, Bash.\\
+\item[$\cdot$] Consulted on and conducted many migrations to Docker, out of Ubuntu 12, from masterful to masterless puppet, making services more operational and secure.\\
+\item[$\cdot$] Upgraded and maintained internal tools for generating flamegraphs, accessing machine logs, querying machine images, and administrating developer machines, using Flask and Go.\\
+\item[$\cdot$] Set up Python monorepo with automatic Docker, PyPi, Debian package deploy, using the Pants build system, Jenkins, and Bash.\\
+\item[$\cdot$] On call for Pinterest uptime, often debugging and reverse engineering unfamiliar services.\\
 \end{itemize}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{Software Engineer (Site Reliability) Intern -} \textit{Google NYC}\\
+\gray & \textbf{Part Time Manufacturing Engineer -} \textit{Aqua Design Innovations}\\
+\gray & {August 2018 to Present}\\
+\end{tabularx}
+\vspace{-0.1cm}
+\begin{itemize} \itemsep-0.2cm
+\item[$\cdot$] Bringing Sprout (plastic tray for growing microgreens) and Air 2 (IoT decorative hydroponics) products from design to production\\
+\item[$\cdot$] Orchestrating factories, contractors, and third party vendors to validate and build high quality production lines.\\
+\item[$\cdot$] Manually CADed, tested, and prototyped for speedy iterative product development.\\
+\end{itemize}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
+\gray & \textbf{Site Reliability Engineer Intern -} \textit{Google Persistent Disk team}\\
 \gray & {May 2015 - August 2015}\\
 \end{tabularx}
 \vspace{-0.1cm}
@@ -158,38 +135,41 @@ $($Google Summer of Code$)$ & Java program with JavaScript visualization\\
 \item[$\cdot$] Implemented early detection system for compaction failures in cloud storage segments\\
 \end{itemize}
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{Summer Lab Assistant -} \textit{Egan Lab, SickKids Hospital, University of Toronto}\\
-\gray & {October 2009 - August 2012}\\
-\end{tabularx}
-\vspace{-0.1cm}
-\begin{itemize} \itemsep-0.2cm
-\item[$\cdot$] Conducted experiments involving mouse autopsies, sequencing, and tumor classification.
-\item[$\cdot$] Part-authored two papers published in Cancer Research.\\
-\end{itemize}
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+	
+\vspace{-0.5cm}
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{Research Assistant -} \textit{Grahn Lab and Pirouz Lab, University of Western Ontario}\\
-\gray & {October 2011 - April 2013}\\
-\end{tabularx}
-\vspace{-0.1cm}
-\begin{itemize} \itemsep-0.2cm
-\item[$\cdot$] Wrote E-Basic script in E-Prime to research gambling, music, and prosocial behavior\\
-\item[$\cdot$] Generated stimuli in MatLab, wrote E-basic script for user-conditioned experiments\\
-\end{itemize}
+\section{Projects}
+\begin{onehalfspacing} \setstretch{0.8}
+\begin{flushleft}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{ACM International Collegiate Programming Contest -} \textit{University of Western Ontario}\\
-\gray & {September 2010 - November 2014}\	\
-\end{tabularx}
-\vspace{-0.1cm}
-\begin{itemize} \itemsep-0.2cm
-\item[$\cdot$] Selected to compete for Western on 3 man team from 2010 to 2013, coding in Java.
-\item[$\cdot$] Coached team in 2014 and 2015.\\
+Masters Thesis & Created custom DNA analysis pipeline to study role of gut\\
+& microbiome in fatty liver disease and atherosclerosis.\\
+& Developed techniques to measure difference between samples.\\[2ex]
 
-\end{itemize}
+\hyperref{http://hackwestern.com}{}{}{Hack Western} & Ran a 500 student, 36 hour hackathon, managed 16 students, raised \$50,000.\\
+
+\end{tabular}
+\end{flushleft}
+\end{onehalfspacing}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{onehalfspacing} \setstretch{0.8}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Masters of Science 2016 & Computational Biochemistry, University of Western Ontario\\[1ex]
+Bachelor of Medical Science 2014 & Computational Biochemistry, University of Western Ontario\\ [1ex]
+& Competed on ACM programming team 2010-2013\\
+& Interned for mouse cancer research at the Egan Lab in Toronto\\
+\end{tabular}
+\end{onehalfspacing}
 
 
 \end{center}
-
 \end{document}
