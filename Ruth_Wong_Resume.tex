@@ -14,17 +14,13 @@
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
-% The main font used in this template, Adobe Garamond Pro, does not 
-% come with Windows by default. You will need to download it in
-% order to get an output as in the preview PDF. Otherwise, change this 
-% font to one that does come with Windows or comment out the font line 
-% to use the default LaTeX font.
+% The main font used in this template, EB Garamond
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \documentclass[letterpaper, oneside, final]{scrartcl} % Paper options using the scrartcl class
 
 \documentclass[letterpaper, oneside, final]{scrartcl} % Paper options using the scrartcl class
-\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{scrlayer-scrpage} % Provides headers and footers configuration
 \usepackage{titlesec} % Allows creating custom \section's
 \usepackage{marvosym} % Allows the use of symbols
 \usepackage{tabularx,colortbl} % Advanced table configurations
@@ -32,10 +28,13 @@
 \usepackage{setspace}
 \usepackage[hidelinks]{hyperref}
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Adobe Garamond Pro} % Main document font
+\usepackage{fontspec}
+\setmainfont{EB Garamond} % Main document font
 \usepackage[margin=1.25in]{geometry}
+\usepackage{xcolor}
+\definecolor{mygray}{RGB}{230, 230, 230}
 
-\newfontfamily{\morespace}{Adobe Garamond Pro}[
+\newfontfamily{\morespace}{EB Garamond}[
   WordSpace={1, 1, 1}
 ]
 
@@ -43,7 +42,7 @@
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
 
 \pagestyle{scrheadings} % Print the headers and footers on all pages
-\clearscrheadfoot
+\clearpairofpagestyles
 
 \addtolength{\voffset}{-0.65in} % Adjust the vertical offset - less whitespace at the top of the page
 \addtolength{\textheight}{+3in} % Adjust the text height - less whitespace at the bottom of the page
@@ -62,7 +61,7 @@
 % ÊHEADER SECTION
 %----------------------------------------------------------------------------------------
 
-{\addfontfeature{LetterSpace=10.0}\fontsize{36}{36}\selectfont\scshape Ruth Grace Wong} % Your name at the top
+{\addfontfeature{LetterSpace=8.0}\fontsize{36}{36}\spaceskip=12pt\selectfont\scshape Ruth Grace Wong} % Your name at the top
 
 \vspace{1cm} % Extra whitespace after the large name at the top
 
@@ -79,10 +78,10 @@ San Francisco  {\large\textperiodcentered} ruthgracewong@gmail.com {\large\textp
 \vspace{0.2cm}
 
 \begin{flushleft}
-\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages / Tools & Python, Bash, Java, R, Amazon Web Services, Docker\\
-Talks & \underline{\href{https://www.usenix.org/conference/srecon18americas/presentation/wong}{Containerization War Stories}} (SREcon), \underline{\href{https://2017.pycon.ca/en/schedule/60/}{Flamegraph that!}} (PyCon Canada)\\
-& \underline{\href{https://hackaday.com/2019/02/22/supercon-ruth-grace-wong-and-firmware-from-the-firehose/}{Firmware from the Firehose}} and \underline{\href{https://hackaday.com/2020/01/03/you-could-be-a-manufacturing-engineer-if-you-could-only-find-the-time/}{Mfg Engineering in Your Spare Time}} (Supercon) \\
+\begin{tabular}{ll}
+     Languages / Tools & Python, Bash, Java, R, Amazon Web Services, Docker\\
+     Talks & \underline{\href{https://www.usenix.org/conference/srecon18americas/presentation/wong}{Containerization War Stories}} (SREcon), \underline{\href{https://2017.pycon.ca/en/schedule/60/}{Flamegraph that!}} (PyCon Canada)\\
+    & \underline{\href{https://hackaday.com/2019/02/22/supercon-ruth-grace-wong-and-firmware-from-the-firehose/}{Firmware from the Firehose}} and \underline{\href{https://hackaday.com/2020/01/03/you-could-be-a-manufacturing-engineer-if-you-could-only-find-the-time/}{Mfg Engineering in Your Spare Time}} (Supercon) \\
 \end{tabular}
 \end{flushleft}
 
@@ -90,16 +89,18 @@ Talks & \underline{\href{https://www.usenix.org/conference/srecon18americas/pres
 %	EMPLOYMENT
 %----------------------------------------------------------------------------------------
 
-\vspace{-0.8cm}
-
 \section{Experience}
 
 \renewcommand{\arraystretch}{1.3}
-
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{Site Reliability Engineer -} \textit{Pinterest Core SRE team}\\
-\gray & {July 2016 to Present}\\
+\begingroup\setlength{\fboxsep}{0pt}
+\colorbox{mygray}{
+\begin{flushleft}
+\begin{tabularx}{\textwidth}{l}
+\textbf{Site Reliability Engineer -} \textit{Pinterest Core SRE team}\\
+July 2016 to Present\\
 \end{tabularx}
+\end{flushleft}
+}\endgroup
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
 \item[$\cdot$] Wrote proof of concept for automating machine image upgrades (OS, instance type) for services, using Python, Spinnaker, AWS.\\
@@ -110,20 +111,30 @@ Talks & \underline{\href{https://www.usenix.org/conference/srecon18americas/pres
 \item[$\cdot$] On call for Pinterest uptime, often debugging and reverse engineering unfamiliar services.\\
 \end{itemize}
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{Part Time Manufacturing Engineer -} \textit{Aqua Design Innovations}\\
-\gray & {August 2018 to August 2019}\\
+\begingroup\setlength{\fboxsep}{0pt}
+\colorbox{mygray}{
+\begin{flushleft}
+\begin{tabularx}{\textwidth}{l}
+\textbf{Part Time Manufacturing Engineer -} \textit{Aqua Design Innovations}\\
+August 2018 to August 2019\\
 \end{tabularx}
+\end{flushleft}
+}\endgroup
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
 \item[$\cdot$] Responsible for managing factories, contractors, and vendors to maintain a 5-product line of hydroponic and aquaponic products. \\
 \item[$\cdot$] Manually CADed (Fusion 360), tested, and prototyped for product development.\\
 \end{itemize}
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{0cm}X}
-\gray & \textbf{Site Reliability Engineer Intern -} \textit{Google Persistent Disk team}\\
-\gray & {May 2015 - August 2015}\\
+\begingroup\setlength{\fboxsep}{0pt}
+\colorbox{mygray}{
+\begin{flushleft}
+\begin{tabularx}{\textwidth}{l}
+\textbf{Site Reliability Engineer Intern -} \textit{Google Persistent Disk team}\\
+May 2015 - August 2015\\
 \end{tabularx}
+\end{flushleft}
+}\endgroup
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
 \item[$\cdot$] Implemented early detection system for compaction failures in cloud storage segments\\
@@ -138,15 +149,13 @@ Talks & \underline{\href{https://www.usenix.org/conference/srecon18americas/pres
 \section{Projects}
 \begin{onehalfspacing} \setstretch{0.8}
 \begin{flushleft}
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-
-Masters Thesis & Created custom DNA analysis pipeline to study role of gut\\
+\begin{tabularx}{\textwidth}{ll}
+\textbf{Masters Thesis} & Created custom DNA analysis pipeline to study role of gut\\
 & microbiome in fatty liver disease and atherosclerosis.\\
-& Developed techniques to measure difference between samples.\\[2ex]
-
-\hyperref{http://hackwestern.com}{}{}{Hack Western} & Ran a 500 student, 36 hour hackathon, managed 16 students, raised \$50,000.\\
-
-\end{tabular}
+& Developed techniques to measure difference between samples.\\
+\\
+\textbf{\hyperref{http://hackwestern.com}{}{}{Hack Western}} & Ran a 500 student, 36 hour hackathon, managed 16 students, raised \$50,000.\\
+\end{tabularx}
 \end{flushleft}
 \end{onehalfspacing}
 
@@ -158,12 +167,14 @@ Masters Thesis & Created custom DNA analysis pipeline to study role of gut\\
 
 \section{Education}
 \begin{onehalfspacing} \setstretch{0.8}
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Masters of Science 2016 & Computational Biochemistry, University of Western Ontario\\[1ex]
-Bachelor of Medical Science 2014 & Computational Biochemistry, University of Western Ontario\\
+\begin{tabularx}{\textwidth}{ll}
+\tesxtbf{Masters of Science 2016} & Computational Biochemistry, University of Western Ontario\\
+& Developed techniques to measure difference between samples.\\
+\\
+\tesxtbf{Bachelor of Medical Science 2014} & Computational Biochemistry, University of Western Ontario\\
 & Competed on ACM programming team 2010-2013\\
 & Interned for mouse cancer research at the Egan Lab in Toronto\\
-\end{tabular}
+\end{tabularx}
 \end{onehalfspacing}
 
 
