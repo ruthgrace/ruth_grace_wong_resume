@@ -1,5 +1,5 @@
-This is my resume as of March 2016. The template was taken from http://www.latextemplates.com/template/stylish-cv. It must be compiled with XeLaTeX.
+Like, 10 years ago, I made this resume using this template: http://www.latextemplates.com/template/stylish-cv.
 
-If you have never used LaTeX before and would like to use this template, I recommend getting (Texmaker)[http://www.xm1math.net/texmaker/]
+I've hacked it over the years as the packages it was using got deprecated and LaTeX changed.
 
-To use as is, you will need to install the Adobe Garamond Pro font
+I edit it using Overleaf. It must be compiled with XeLaTeX.
