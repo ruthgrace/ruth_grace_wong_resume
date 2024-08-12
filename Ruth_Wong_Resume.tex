@@ -68,8 +68,7 @@
 {\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
 \addfontfeature{LetterSpace=10.0}\fontsize{12.5}{17}\selectfont\scshape % Letter spacing and font size
 
-San Francisco  {\large\textperiodcentered} ruthgracewong@gmail.com {\large\textperiodcentered} (628) 209 9005\\ % Your email address and phone number
-\underline{\href{https://www.linkedin.com/in/ruthgracewong/}{LinkedIn}}
+San Francisco  {\large\textperiodcentered} ruthgracewong@gmail {\large\textperiodcentered} (628) 209 9005 {\large\textperiodcentered} \underline{\href{https://www.linkedin.com/in/ruthgracewong/}{LinkedIn}}
 }
 
 %----------------------------------------------------------------------------------------
@@ -96,8 +95,8 @@ San Francisco  {\large\textperiodcentered} ruthgracewong@gmail.com {\large\textp
 \colorbox{mygray}{
 \begin{flushleft}
 \begin{tabularx}{\textwidth}{l}
-\textbf{Senior Site Reliability Engineer -} \textit{Pinterest Cloud Architecture Team}\\
-July 2016 to Present\\
+\textbf{Senior Software Engineer -} \textit{Tech lead for server configuration, Pinterest Cloud Architecture Team}\\
+January 2022 to June 2024\\
 \end{tabularx}
 \end{flushleft}
 }\endgroup
@@ -105,11 +104,38 @@ July 2016 to Present\\
 \begin{itemize} \itemsep-0.2cm
 
 
-\item[$\cdot$] Technical lead for reliability and performance of server configuration management (Puppet) for 100K+ server fleet\\
-\item[$\cdot$] Modernized infrastructure by Dockerizing services, upgrading operating systems, and reducing dependencies in infrastructure provisioning.\\
-\item[$\cdot$] Implemented automatic machine image upgrades (OS, instance type) for services, using Python, Spinnaker, and AWS. \underline{\href{https://www.usenix.org/conference/srecon19asia/presentation/menezes}{Showcased at SREcon19 Asia/Pacific}}\\
-\item[$\cdot$] Set up \underline{\href{https://medium.com/pinterest-engineering/building-a-python-monorepo-for-fast-reliable-development-be763781f67}{Python monorepo}} with Docker, PyPi, and Debian package deploy with Pants build, Jenkins, Bash, and Artifactory, decreasing new service deploy time from one engineer day to one hour.\\
-\item[$\cdot$] On call for Pinterest uptime, often debugging and reverse engineering unfamiliar services
+\item[$\cdot$] Modernized 100K+ server fleet with OS upgrades, infrastructure provisioning best practices, and by providing guidance for company-wide initiatives to do the same.\\[10pt]
+\item[$\cdot$] Led technical strategy for server configuration at Pinterest, including writing roadmaps and making reports and presentations on upgrades, best practices, and contingency planning.\\[10pt]
+\item[$\cdot$] Increased reliability and saved costs by compressing server configs, running Puppet via Go binary, automating serverspec testing and instance launch testing, and rolling out per-cluster alerting.\\[10pt]
+\item[$\cdot$] Improved developer velocity by speeding up Puppet Rspec testing by 4x via module parallelization.\\[10pt]
+
+\end{itemize}
+
+
+\begingroup\setlength{\fboxsep}{0pt}
+\colorbox{mygray}{
+\begin{flushleft}
+\begin{tabularx}{\textwidth}{l}
+\textbf{Site Reliability Engineer -} \textit{Pinterest Core SRE Team}\\
+July 2016 to December 2021\\
+\end{tabularx}
+\end{flushleft}
+}\endgroup
+\vspace{-0.1cm}
+\begin{itemize} \itemsep-0.2cm
+\item[$\cdot$] Implemented automatic machine image upgrades for services, using Python, Spinnaker, and AWS. \underline{\href{https://www.usenix.org/conference/srecon19asia/presentation/menezes}{Showcased at SREcon19 Asia/Pacific}}\\[10pt]
+
+\item[$\cdot$] Wrote Flamegraph profiling for Python applications, automatic domain creation, dashboard improving incident response by 10 mins. Sped up and added search for image query tool.\\[10pt]
+\item[$\cdot$] Trained 10 new employees to be on call, managed contractor engineers to execute on deliverables.\\[10pt]
+\item[$\cdot$] Set up \underline{\href{https://medium.com/pinterest-engineering/building-a-python-monorepo-for-fast-reliable-development-be763781f67}{Python monorepo}} with Docker, PyPi, and Debian package deploy with Pants build, Jenkins, Bash, and Artifactory, decreasing new service deploy time from one engineer day to one hour.\\[10pt]
+\item[$\cdot$] Set up Artifactory repository management for node packages for dev, and prepared Python package migration from Bandersnatch-hosted repo.\\[10pt]
+\item[$\cdot$] Advised teams on instance launch time, infra simplification, and deploy of fleet-wide updates.\\[10pt]
+\item[$\cdot$] Supported 1000+ requests from engineers. Made self-serve tools \& docs for common requests.\\[10pt]
+\item[$\cdot$] Put out infra-wide changes to comply with security initiatives, maintained SOX compliance via audits and code reviews\\[10pt]
+\item[$\cdot$] On call for Pinterest uptime. Ack'd 500+ pages, often debugging unfamiliar services.\\[10pt]
+\item[$\cdot$] Ran infrastruture orientation for new engineers 2017-2018, ran internal educative panels, SRE book club. Contributed to 200+ internal wiki articles.\\[10pt]
+\item[$\cdot$] Lead for Caregivers ERG - ran annual family Halloween photo contest and speaker events.\\
+
 \end{itemize}
 
 \begingroup\setlength{\fboxsep}{0pt}
@@ -123,8 +149,8 @@ August 2018 to August 2019\\
 }\endgroup
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
-\item[$\cdot$] Responsible for managing factories, contractors, and vendors to maintain a 5-product line of hydroponic and aquaponic products. \\
-\item[$\cdot$] Manually CADed (Fusion 360), tested, and prototyped for product development.\\
+\item[$\cdot$] Managed factories, contractors, and vendors to maintain a 5-product line of aquaponic products. \\
+\item[$\cdot$] CAD (Fusion 360), testing, and prototyping for product development.\\
 \end{itemize}
 
 \begingroup\setlength{\fboxsep}{0pt}
@@ -147,12 +173,11 @@ May 2015 - August 2015\\
 	
 \vspace{-0.5cm}
 
-\section{Research and writing}
-\begin{onehalfspacing} \setstretch{0.8}
+\section{Research, writing, consulting}
+\begin{onehalfspacing} \setstretch{0.4}
 \begin{flushleft}
 \begin{tabularx}{\textwidth}{ll}
-\textbf{\hyperref{https://github.com/ruthgrace/msc_thesis_2016/blob/master/westernthesis.pdf}{}{}{Masters Thesis}} & Created DNA analysis pipeline to study role of gut microbiome in liver disease\\
-& and atherosclerosis, including \underline{\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161196}{new ways to assess differences between samples}}.\\
+\textbf{\hyperref{https://github.com/ruthgrace/msc_thesis_2016/blob/master/westernthesis.pdf}{}{}{Masters Thesis}} & Formulated \underline{\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161196}{new ways to calculate differences between human microbiomes}}.\\
 \\
 \textbf{Technical writing} & For \underline{\href{https://www.scopeofwork.net/author/ruth/}{Scope of Work}} and \underline{\href{https://medium.com/@ruthgracewong/list/supplyframe-hardware-articles-by-ruth-grace-wong-0191c95f26b1}{SupplyFrame Hardware}}, mostly about manufacturing\\
 \\
@@ -170,10 +195,8 @@ May 2015 - August 2015\\
 \section{Education}
 \begin{onehalfspacing} \setstretch{0.8}
 \begin{tabularx}{\textwidth}{ll}
-\tesxtbf{Masters of Science 2016} & Computational Biochemistry, University of Western Ontario\\
-\\
-\tesxtbf{Bachelor of Medical Science 2014} & Computational Biochemistry, University of Western Ontario\\
-& Competed on ACM programming team 2010-2013\\
+\tesxtbf{MSc 2016, BSc 2014} & Computational Biochemistry, University of Western Ontario\\
+& ACM programming contestant 2010-2013\\
 \end{tabularx}
 \end{onehalfspacing}
 
