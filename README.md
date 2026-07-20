@@ -1,3 +1,5 @@
+note to self: you migrated this to overleaf in 2025
+
 Like, 10 years ago, I made this resume using this template: http://www.latextemplates.com/template/stylish-cv.
 
 I've hacked it over the years as the packages I was using got deprecated and LaTeX changed.
