@@ -72,23 +72,20 @@
 
 San Francisco  {\large\textperiodcentered} ruthgracewong@gmail.com {\large\textperiodcentered} (628) 209 9005 {\large\textperiodcentered} \underline{\href{https://www.linkedin.com/in/ruthgracewong/}{LinkedIn}}
 }
+\begin{flushleft}
+\begin{tabularx}{\textwidth}{ll}
+\textbf{Languages/Tools} & Python, Go, Bash, Amazon Web Services, Docker\\
+\end{tabularx}
+\end{flushleft}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS & TALKS
 %----------------------------------------------------------------------------------------
 
-\begin{flushleft}
-\begin{tabular}{ll}
-     Languages / Tools & Python, Go, Bash, Amazon Web Services, Docker\\
-     Talks & \underline{\href{https://www.usenix.org/conference/srecon18americas/presentation/wong}{Containerization War Stories}} (SREcon), \underline{\href{https://2017.pycon.ca/en/schedule/60/}{Flamegraph that!}} (PyCon Canada)\\
-    & \underline{\href{https://hackaday.com/2019/02/22/supercon-ruth-grace-wong-and-firmware-from-the-firehose/}{Firmware from the Firehose}} and \underline{\href{https://hackaday.com/2020/01/03/you-could-be-a-manufacturing-engineer-if-you-could-only-find-the-time/}{Mfg Engineering in Your Spare Time}} (Hackaday) \\
-\end{tabular}
-\end{flushleft}
-
 %----------------------------------------------------------------------------------------
 %	EMPLOYMENT
 %----------------------------------------------------------------------------------------
-\section{Experience}
+\section{Relevant Experience}
 
 \renewcommand{\arraystretch}{1.3}
 
@@ -96,17 +93,18 @@ San Francisco  {\large\textperiodcentered} ruthgracewong@gmail.com {\large\textp
 \colorbox{mygray}{
 \begin{flushleft}
 \begin{tabularx}{\textwidth}{l}
-\textbf{Freelance Engineering}\\
-June 2024 to present\\
+\textbf{Software Engineer at Whiz Voice} \\
+April 2025 to present\\
 \end{tabularx}
 \end{flushleft}
 }\endgroup
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
 
-\item[$\cdot$] Built an Android voice assistant with screen-agent integration, an accessibility-app test framework, and an autofix-autotest pipeline for when target apps change.\\[10pt]
-\item[$\cdot$] Lead researcher on a network analysis of coalitions influencing California legislation; developed AI-assisted pipeline to parse and clean metadata across hundreds of thousands of documents.\\[10pt]
-\item[$\cdot$] Part-time manufacturing engineer for cargo bike-share and charging docks at \underline{\href{https://dropmobility.com/}{Drop Mobility}}.\\[10pt]
+
+\item[$\cdot$] Built an Android voice assistant with screen-agent integration for my own daily use.\\[10pt]
+\item[$\cdot$] Developed a test framework for accessibility apps that Android's native tools can't test.\\[10pt]
+\item[$\cdot$] Engineered an autofix-autotest pipeline for external app integrations.\\
 
 \end{itemize}
 
@@ -114,7 +112,7 @@ June 2024 to present\\
 \colorbox{mygray}{
 \begin{flushleft}
 \begin{tabularx}{\textwidth}{l}
-\textbf{Senior Software Engineer -} \textit{Tech lead for server configuration, Pinterest Cloud Architecture Team}\\
+\textbf{Senior Software Engineer at Pinterest -} \textit{Cloud Architecture Team}\\
 January 2022 to June 2024\\
 \end{tabularx}
 \end{flushleft}
@@ -123,9 +121,10 @@ January 2022 to June 2024\\
 \begin{itemize} \itemsep-0.2cm
 
 
-\item[$\cdot$] Led technical strategy for server configuration at Pinterest, including writing road maps and advising teams on upgrades, best practices, and contingency planning.\\[10pt]
-\item[$\cdot$] Increased reliability and saved costs by compressing server configs, running Puppet via Go binary, automating serverspec testing and instance launch testing, and rolling out per-cluster alerting.\\[10pt]
-\item[$\cdot$] Upgraded OS on 100K+ servers via tech guidance \& hands-on support for company-wide initiative.\\[10pt]
+\item[$\cdot$] Led technical strategy for server configuration at Pinterest across 30 teams, including writing road maps and advising teams on upgrades, best practices, and contingency planning.\\[10pt]
+\item[$\cdot$] Reduced major outages by 50\% through atomized server configs, rearchitecting Puppet run to remove external deps, automatic serverspec and instance launch testing, and per-cluster alerting.\\[10pt]
+\item[$\cdot$] Upgraded OS on 150K servers via tooling, tech guidance, \& \underline{\href{https://medium.com/@ruthgracewong/tracking-down-a-memory-leak-b90883919f0e}{hands-on support}} for company-wide initiative. Prototyped automated upgrades, work presented at 
+\underline{\href{https://www.usenix.org/conference/srecon19asia/presentation/menezes}{SREcon19 Asia}}.\\[10pt]
 
 \end{itemize}
 
@@ -134,31 +133,30 @@ January 2022 to June 2024\\
 \colorbox{mygray}{
 \begin{flushleft}
 \begin{tabularx}{\textwidth}{l}
-\textbf{Site Reliability Engineer -} \textit{Pinterest Core SRE Team}\\
+\textbf{Site Reliability Engineer at Pinterest - } \textit{Core SRE Team}\\
 July 2016 to December 2021\\
 \end{tabularx}
 \end{flushleft}
 }\endgroup
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
-\item[$\cdot$] Prototyped automatic machine upgrades (Python, Spinnaker, AWS) \underline{\href{https://www.usenix.org/conference/srecon19asia/presentation/menezes}{Showcased at SREcon19 Asia}}\\[10pt]
-\item[$\cdot$] On call for Pinterest uptime. Ack'd 500+ pages, often debugging unfamiliar services.\\[10pt]
-\item[$\cdot$] Updated 200+ tech docs. Trained 10 engineers for on call. Managed contractors.\\[10pt]
-
+\item[$\cdot$] Contributed to company-wide Dockerization of microservices towards centralized upgrades and infra savings from container orchestration. Presented at SREcon (\underline{\href{https://www.usenix.org/conference/srecon18americas/presentation/wong}{Containerization War Stories}}).\\[10pt]
+\item[$\cdot$] Contributed to a \underline{\href{https://medium.com/pinterest-engineering/building-a-python-monorepo-for-fast-reliable-development-be763781f67}{Python monorepo}} that cut new-service setup from days to 1 hour by standardizing Docker build and deploy; 35+ microservices migrated.\\[10pt]
+\item[$\cdot$] Sustained Pinterest uptime as core on-call across 100s of microservices, resolving 500+ pages. Scaled on-call by training 10 engineers and updating 100+ runbooks and other docs over the years.\\
 \end{itemize}
 
 \begingroup\setlength{\fboxsep}{0pt}
 \colorbox{mygray}{
 \begin{flushleft}
 \begin{tabularx}{\textwidth}{l}
-\textbf{Site Reliability Engineer Intern -} \textit{Google Persistent Disk team}\\
+\textbf{Site Reliability Engineer Intern at Google -} \textit{Persistent Disk team}\\
 May 2015 - August 2015\\
 \end{tabularx}
 \end{flushleft}
 }\endgroup
 \vspace{-0.1cm}
 \begin{itemize} \itemsep-0.2cm
-\item[$\cdot$] Implemented early detection system for compaction failures in cloud storage segments\\
+\item[$\cdot$] Implemented compaction failure detection for storage segments, to give on-callers 2 weeks notice.\\
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -166,22 +164,45 @@ May 2015 - August 2015\\
 %----------------------------------------------------------------------------------------
 	
 \vspace{-0.5cm}
+\section{Leadership and Civic Engagement}
 
-\section{Selected Work and Service}
-\begin{onehalfspacing} \setstretch{0.4}
+\begin{onehalfspacing}\setstretch{0.6}
 \begin{flushleft}
 \begin{tabularx}{\textwidth}{ll}
-\textbf{\hyperref{https://github.com/ruthgrace/msc_thesis_2016/blob/master/westernthesis.pdf}{}{}{MSc Thesis}} & Formulated \underline{\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161196}{new ways to calculate differences between human microbiomes}}.\\
-\\
-\textbf{Writing} & For \underline{\href{https://www.scopeofwork.net/author/ruth/}{Scope of Work}} and \underline{\href{https://medium.com/@ruthgracewong/list/supplyframe-hardware-articles-by-ruth-grace-wong-0191c95f26b1}{SupplyFrame Hardware}}, mostly about manufacturing\\
-& For SF's \underline{\href{https://www.sf.gov/departments--ballot-simplification-council}{Ballot Simplification Council}}, writing ballot digests mailed to voters\\
-\\
-\textbf{Manufacturing} & CAD, testing, prototyping, supplier management for consumer aquaponics.\\
-\\
-\textbf{Civic Service} & Co-Prez of the \underline{\href{https://lwvsf.org/}{League of Women Voters of San Francisco}}, and \underline{\href{https://joyfulparentingsf.com/}{Joyful Parenting SF}}\\
+\textbf{Leginfo Project} & Lead researcher on a network analysis of coalitions influencing California legislation;\\
+& developed AI-assisted pipeline to parse and relate 2M org names across 300K docs.\\
+\textbf{Ballot Writing} & For SF's \underline{\href{https://www.sf.gov/departments--ballot-simplification-council}{Ballot Simplification Council}}, writing ballot digests mailed to voters\\
+\textbf{Civic Service} & Co-President of the \underline{\href{https://lwvsf.org/}{League of Women Voters of San Francisco}}\\
+& Co-Founder of \underline{\href{https://joyfulparentingsf.com/}{Joyful Parenting SF}}
 \end{tabularx}
 \end{flushleft}
 \end{onehalfspacing}
+
+\vspace{-0.7cm}
+\section{Hardware}
+
+\begin{onehalfspacing}\setstretch{0.6}
+\begin{flushleft}
+\begin{tabularx}{\textwidth}{ll}
+\textbf{Writing} & For \underline{\href{https://www.scopeofwork.net/author/ruth/}{Scope of Work}} and \underline{\href{https://medium.com/@ruthgracewong/list/supplyframe-hardware-articles-by-ruth-grace-wong-0191c95f26b1}{SupplyFrame Hardware}}, mostly about manufacturing\\
+\textbf{Talks} & \underline{\href{https://hackaday.com/2019/02/22/supercon-ruth-grace-wong-and-firmware-from-the-firehose/}{Firmware from the Firehose}} and \underline{\href{https://hackaday.com/2020/01/03/you-could-be-a-manufacturing-engineer-if-you-could-only-find-the-time/}{Mfg Engineering in Your Spare Time}} (Hackaday) \\
+\textbf{Manufacturing} & CAD, testing, prototyping, supplier management for consumer aquaponics.\\
+& Helped productionize cargo bike-share and charging docks at \underline{\href{https://dropmobility.com/}{Drop Mobility}}.\\
+\end{tabularx}
+\end{flushleft}
+\end{onehalfspacing}
+
+% \vspace{-0.5cm}
+% \section{Education}
+% \begin{onehalfspacing}\setstretch{0.6}
+% \begin{flushleft}
+% \begin{tabularx}{\textwidth}{ll}
+% \textbf{\hyperref{https://github.com/ruthgrace/msc_thesis_2016/blob/master/westernthesis.pdf}{}{}{MSc}} & Formulated \underline{\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161196}{new ways to calculate differences between human microbiomes}}.\\
+% \textbf{BSc} & Honors Specialization Computational Biochemistry at Western University\\
+
+% \end{tabularx}
+% \end{flushleft}
+% \end{onehalfspacing}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
